@@ -35,17 +35,17 @@ print(word)
 counter = "amount of letters in string"
 
 
-final_result3 = ""
 
-string_to_compress= ("aaabbbbbccccaacccbbbaaabbbaaa")    #txt.find("") ???
 
-    
-for outer_index in range(len(string_to_compress)):
-    for inner_index in range(len(string_to_compress)):
-        final_result3 += string_to_compress
-        if outer_index == inner_index:
-            print(final_result3)
-            
+def string_character_amounts():    
+    string_to_compress= ("aaabbbbbccccaacccbbbaaabbbaaa")    #txt.find("") ???
+    final_result3 = ""  
+    for outer_index in range(len(string_to_compress)):
+        for inner_index in range(len(string_to_compress)):
+            final_result3 += string_to_compress
+            if outer_index == inner_index:
+                print(final_result3)
+
 
 
 
