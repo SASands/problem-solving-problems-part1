@@ -44,12 +44,12 @@ from itertools import count
 
 
 
-
+#problem is value of all a's are being counted at once instead of looping through one by one
 
 def receive_characters():
     previous_character = ""
     next_character = ""
-    character_count = (str 1)
+    character_count = str(1)
     final_result = ""
     string_to_compress = ("abbbbbccccaacccbbbaaabbbaaa")  
     for current_character in string_to_compress:
@@ -59,7 +59,7 @@ def receive_characters():
             final_result += previous_character
         # if previous & current letter is the same:
         elif previous_character == current_character:
-            character_count += 1
+            character_count += str (1)
         # what about the end?
 
         else: 
