@@ -1,3 +1,4 @@
+from itertools import count
 
 
 # 1. Reverse a string
@@ -29,35 +30,77 @@
         #2b-keep track of next character
         #2c- keep track of the character with a counter
         #2d- keep track of final_result string (intial value "")
-    #3-if if current character is the same as next character 
+    #3-if current character is the same as next character 
         #3a if they are the same increase counter by one
     #4-else they are not the same
         #4a-stringify counter and concatenante with current character
             #4a.1-concatenate with final result
                 #restart the counter at 1
     #5-return final_result string
+#txt.find("") ???
+
+
+
+
+
 
 
 
 def receive_characters():
-    string_to_compress= ("aaabbbbbccccaacccbbbaaabbbaaa")  #txt.find("") ???
-    for character in string_to_compress:
-        print (character)
-receive_characters()
-    
-def iterate_string():
-    string_to_iterate= ("aaabbbbbccccaacccbbbaaabbbaaa")
-    iterate = iter(string_to_iterate)
-    print(next(iterate))
-iterate_string()
+    previous_character = ""
+    next_character = ""
+    character_count = (str 1)
+    final_result = ""
+    string_to_compress = ("abbbbbccccaacccbbbaaabbbaaa")  
+    for current_character in string_to_compress:
+        # if previous & current letter is different:
+        if previous_character != current_character:
+            final_result += character_count
+            final_result += previous_character
+        # if previous & current letter is the same:
+        elif previous_character == current_character:
+            character_count += 1
+        # what about the end?
 
-def str_indexing():
-    characters= ""
-    string_to_index=  ("aaabbbbbccccaacccbbbaaabbbaaa")
-    string_to_index.index("aaabbbbbccccaacccbbbaaabbbaaa")
-    for character in string_to_index:
-        print (character)
-str_indexing()
+        else: 
+            final_result
+        previous_character = current_character
+        print (final_result)
+    return final_result
+    # final_result should equal "1a5b4c" etc.
+receive_characters()
+
+
+
+    
+
+
+
+
+
+# def iterate_string():
+#     keep_count_of_current_character ="" 
+#     string_to_iterate= ("aaabbbbbccccaacccbbbaaabbbaaa")
+#     for character in string_to_iterate:
+#         if character == character:
+#             character += character
+#             iter (range(len(string_to_iterate)))
+#             count (len(string_to_iterate))
+#             print (count)
+# iterate_string()
+
+
+
+
+
+# def str_indexing():
+#     characters= ""
+#     string_to_index=  ("aaabbbbbccccaacccbbbaaabbbaaa")
+#     string_to_index.index("aaabbbbbccccaacccbbbaaabbbaaa")
+#     for character in string_to_index:
+#         print (character)
+# str_indexing()
+
 
 
 
@@ -113,18 +156,18 @@ str_indexing()
 
 
 
-def palindrome():
-    user_input= input("Please give me a word to check if it's a palindrome: ")
-    final_result2= ""
-    word1 = user_input
-    word2 = final_result2
-    for index in range(len(word1)-1, -1, -1):
-        final_result2 += word1[index] 
-    if word1 == final_result2:
-        print ("that word is a Palindrome!")
-    else:
-        print ("That's unfortunately not a Palindrome")
-palindrome()
+# def palindrome():
+#     user_input= input("Please give me a word to check if it's a palindrome: ")
+#     final_result2= ""
+#     word1 = user_input
+#     word2 = final_result2
+#     for index in range(len(word1)-1, -1, -1):
+#         final_result2 += word1[index] 
+#     if word1 == final_result2:
+#         print ("that word is a Palindrome!")
+#     else:
+#         print ("That's unfortunately not a Palindrome")
+# palindrome()
 
 
 
